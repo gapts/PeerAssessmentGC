@@ -13,15 +13,15 @@ The data was splitted in two data sets: training and testing sets.
 We use the following files (contained in the "__UCI HAR Dataset__", "__UCI HAR Dataset/test__" and "__UCI HAR Dataset/train__" folders) in the `zip` file:
 
 * __UCI HAR Dataset/__`activity_labels.txt`: File with the descriptions of the activity code numbers.
-* __UCI HAR Dataset/__`features.txt`: List of all features in the `X_train.txt` and `X_test.txt` file. Correspond to the names of measurements that were obtained from the accelerometer and gyroscope.__^1__
+* __UCI HAR Dataset/__`features.txt`: List of all features in the `X_train.txt` and `X_test.txt` file. Correspond to the names of the measurements that were obtained from the accelerometer and gyroscope (check the note).
 * __train/__`X_train.txt`: Numeric features of the training set. The units of this features were normalized and bounded within [-1,1].
 * __train/__`y_train.txt`: Activity codes for the training set.
-* __train/__`subject_train.txt`: Each row identifies the subject (by a number) who performed the activity for the training set. Its range is from 1 to 30.
+* __train/__`subject_train.txt`: Each row identifies a subject (by a number) who performed the activity for the training set. Its range is from 1 to 30.
 * __test/__`X_test.txt`: Numeric features of the testing set. The units of this features were normalized and bounded within [-1,1].
 * __test/__`y_test.txt`: Activity codes for the testing set.
-* __test/__`subject_test.txt`: Each row identifies the subject (by a number) who performed the activity for the testing set. Its range is from 1 to 30.
+* __test/__`subject_test.txt`: Each row identifies a subject (by a number) who performed the activity for the testing set. Its range is from 1 to 30.
 
-__^1__For the sake of brevity, we refer the reader to the `features_info.txt` file in the "__UCI HAR Dataset__" folder for a  complete description of each feature contained in the raw data.
+__Note:__For the sake of brevity, we refer the reader to the `features_info.txt` file in the "__UCI HAR Dataset__" folder for a  complete description of each feature contained in the raw data.
 
 ### Processed Data
 #### Cleaning Data Process
@@ -33,14 +33,14 @@ In order to obtain the tidy data we perform the following steps:
 
 3. We used the activity names in the file `activity_labels.txt` in order to change the code numbers of the activities with descriptive names.
 
-4. In order to appropriately label the variable names we replace the "-"" with "." and and remove the parantheses "()" (e.g., we change the "tBodyAcc-mean()-X" variable to "tBodyAcc.mean.X").
+4. In order to appropriately label the variable names we replace the "-" with "." and and remove the parantheses "()" (e.g., we change the "tBodyAcc-mean()-X" variable to "tBodyAcc.mean.X").
 
-5. Finally, we created the tidy data set by averaging of each variable extracted in step 2 for each activity and each subject in a table (since there's only one class of experimental unit).  We save the tidy data in the `TidyAverageDataSet.csv` file.  Note that we average means and standard deviations for the purpose of this analysis.
+5. Finally, we created the tidy data set by averaging each variable extracted in step 2 for each activity and each subject in a table (since there's only one class of experimental unit).  We save the tidy data in the `TidyAverageDataSet.csv` file.  Note that we average means and standard deviations for the purpose of this analysis.
 
 ### Information of the variables
 The tidy data set (stored in the `TidyAverageDataSet.csv` file) contains the following variables.
 
 * subject: The number of the subject. Its range is from 1 to 30.
-* activity: Descriptive activity performed by the subject. 
+* activity: Activity performed by the subject. 
 * feature: Type of feature averaged.
 * value: Numeric value that represent the average of the feature.  Values normalized and bounded within [-1,1].
