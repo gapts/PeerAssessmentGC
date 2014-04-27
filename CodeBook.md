@@ -21,7 +21,7 @@ We use the following files (contained in the "__UCI HAR Dataset__", "__UCI HAR D
 * __test/__`y_test.txt`: Activity codes for the testing set.
 * __test/__`subject_test.txt`: Each row identifies a subject (by a number) who performed the activity for the testing set. Its range is from 1 to 30.
 
-__Note:__For the sake of brevity, we refer the reader to the `features_info.txt` file in the "__UCI HAR Dataset__" folder for a  complete description of each feature contained in the raw data.
+__Note:__ For the sake of brevity, we refer the reader to the `features_info.txt` file in the "__UCI HAR Dataset__" folder for a  complete description of each feature contained in the raw data.
 
 ### Processed Data
 #### Cleaning Data Process
