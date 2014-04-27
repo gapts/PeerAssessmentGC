@@ -10,7 +10,7 @@ The data was splitted in two data sets: training and testing sets.
 
 ### Raw Data
 
-We use the following files (contained in the "__UCI HAR Dataset__", "__UCI HAR Dataset/test__" and "__UCI HAR Dataset/train__" folders) contained in the `zip` file:
+We use the following files (contained in the "__UCI HAR Dataset__", "__UCI HAR Dataset/test__" and "__UCI HAR Dataset/train__" folders) in the `zip` file:
 
 * __UCI HAR Dataset/__`activity_labels.txt`: File with the descriptions of the activity code numbers.
 * __UCI HAR Dataset/__`features.txt`: List of all features in the `X_train.txt` and `X_test.txt` file. Correspond to the names of measurements that were obtained from the accelerometer and gyroscope.__^1__

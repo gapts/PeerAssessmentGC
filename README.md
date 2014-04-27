@@ -27,9 +27,9 @@ There are three files:
 
 In order to reproduce the project you should run the `run_analysis.R` in [R](http://www.r-project.org/).  The script will create a folder __STAGIRITE_PA01__ that containt:
 
-* A file called `DataDownloadDate.txt` with the date when the data was download.
+* A file called `DataDownloadDate.txt` with the date when the data was downloaded.
 * A folder called __RAW_DATA__ with the raw data.  
-* A folder called __PROCESSED_DATA__ with the processed data stored in a file `TidyAverageDataSet.csv`.
+* A folder called __PROCESSED_DATA__ with the processed data stored in the file `TidyAverageDataSet.csv`.
 
 __Note__: This script was written and executed on a Mac, you could have some difficults in other operating systems.
 
