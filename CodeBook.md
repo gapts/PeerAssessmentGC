@@ -37,7 +37,7 @@ In order to obtain the tidy data we perform the following steps:
 
 5. Finally, we created the tidy data set by averaging each variable extracted in step 2 for each activity and each subject in a table (since there's only one class of experimental unit).  We save the tidy data in the `TidyAverageDataSet.csv` file.  Note that we average means and standard deviations for the purpose of this analysis.
 
-### Information of the variables
+#### Information of the variables
 The tidy data set (stored in the `TidyAverageDataSet.csv` file) contains the following variables.
 
 * subject: The number of the subject. Its range is from 1 to 30.
